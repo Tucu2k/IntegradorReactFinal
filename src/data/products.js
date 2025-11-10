@@ -2,7 +2,7 @@ const products = [
   { id: 'p1', title: 'Intel Core I9-10900k', price: 300., category: 'Procesadores', img: '/imagenes/pr0cesador.png' },
   { id: 'p2', title: 'Nvidia RTX 4090', price: 900, category: 'Placa de video', img: '/imagenes/nvidia placa.png' },
   { id: 'p3', title: 'AMD RTX 7900XTX', price: 750, category: 'Placa de video', img: '/imagenes/amd placa.png' },
-  { id: 'p4', title: 'Ram Corsair DDR4', price: 35, category: 'RAMS', img: '/imagenes/Ram corsair.png' },
+  { id: 'p4', title: 'Ram Corsair DDR4', price: 35, category: 'RAMS', img: 'git/imagenes/Ram corsair.png' },
   { id: 'p5', title: 'MSI MPG B650 Tomahawk WiFi ', price: 500, category: 'MotherBoards', img: '/public/imagenes/MSI_MPG_B650_Tomahawk_WiFi_1-removebg-preview.png' },
   { id: 'p6', title: 'SSD Samsung 980PRO', price: 45.99, category: 'Almacenamiento', img: '/public/imagenes/Samsung980-PRO_L-Perspective.png' },
   { id: 'p7', title: 'Fuente EVGA Supernova 850W', price: 330.99, category: 'Fuente de Poder', img: '/public/imagenes/Fuente EVGA SUPERNOVA 850.png' },
