@@ -1,8 +1,7 @@
 /* === Fondo estrellado retro === */
 body, html {
   margin-top: 1rem;
-  padding: 0;
-  background-color: #030712; /* color de respaldo si el canvas no carga */
+  padding: 0;/* color de respaldo si el canvas no carga */
   color: white; /* texto en blanco para contraste */
   min-height: 100vh;
   overflow-x: hidden;
@@ -94,3 +93,4 @@ html, body {
 main {
   background: transparent !important;
 }
+

@@ -1,0 +1,9 @@
+/* Realistic static stars background */
+.stars-bg {
+  position: fixed;
+  inset: 0;
+  background: #000 url("https://i.imgur.com/9f3RxtJ.png") repeat;
+  background-size: contain;
+  z-index: -1;
+  pointer-events: none;
+}
