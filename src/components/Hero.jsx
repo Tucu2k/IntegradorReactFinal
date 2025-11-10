@@ -17,7 +17,7 @@ export default function Hero() {
 
         <Col md={6} className="mt-4 mt-md-0 text-center">
           <Image
-            src="/src/imagenes/argos-removebg-preview.png"
+            src="/imagenes/argos-removebg-preview.png"
             alt="Hero"
             fluid
             className="hero-img"
