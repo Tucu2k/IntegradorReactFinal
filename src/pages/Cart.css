@@ -1,4 +1,4 @@
-/* CONTENEDOR PRINCIPAL */
+/* ====== ESTILOS GENERALES CARRITO (DESKTOP) ====== */
 .cart-page {
   color: #ffffff;
   padding: 2rem 0;
@@ -9,7 +9,7 @@
   font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  text-shadow: 0 0 12px rgba(255,255,255,0.25);
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
 }
 
 /* TABLA */
@@ -28,16 +28,16 @@
   background: rgba(255, 255, 255, 0.08);
   color: #fff;
   text-transform: uppercase;
-  font-size: .9rem;
+  font-size: 0.9rem;
   letter-spacing: 0.5px;
 }
 
 /* FILAS */
 .cart-table tbody td {
   padding: 1rem;
-  color: #2e2d2d;
+  color: black;
   vertical-align: middle;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* INPUT DE CANTIDAD */
@@ -45,7 +45,7 @@
   width: 80px;
   text-align: center;
   background: #111;
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: #fff;
   border-radius: 6px;
 }
@@ -62,6 +62,14 @@
 
 .btn-remove:hover {
   background: #c9302c !important;
+}
+
+/* TOTAL */
+.cart-total {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
 }
 
 /* BOTONES INFERIORES */
@@ -97,10 +105,105 @@
   background: #c9302c !important;
 }
 
-/* TOTAL */
-.cart-total {
-  margin-top: 1rem;
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #fff;
+/* ====== RESPONSIVE: MOBILE (≤ 480px) ====== */
+@media (max-width: 480px) {
+  .cart-page {
+    padding: 1.5rem 0;
+  }
+
+  /* Ocultamos el header de la tabla */
+  .cart-table thead {
+    display: none;
+  }
+
+  /* La tabla se convierte en "cards" verticales */
+  .cart-table,
+  .cart-table tbody,
+  .cart-table tr,
+  .cart-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .cart-table {
+    border-radius: 0;
+    border: none;
+    background: transparent;
+  }
+
+  .cart-table tr {
+    margin-bottom: 1.2rem;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .cart-table tbody td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.7rem 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95rem;
+  }
+
+  .cart-table tbody td:last-child {
+    border-bottom: none;
+    justify-content: center;
+  }
+
+  /* Labels "fake" para cada fila */
+  .cart-table tbody td:nth-child(1)::before {
+    content: "Producto";
+  }
+  .cart-table tbody td:nth-child(2)::before {
+    content: "Precio";
+  }
+  .cart-table tbody td:nth-child(3)::before {
+    content: "Cant.";
+  }
+  .cart-table tbody td:nth-child(4)::before {
+    content: "Subtotal";
+  }
+
+  .cart-table tbody td::before {
+    font-weight: 600;
+    margin-right: 0.5rem;
+    color: #bbbbbb;
+  }
+
+  /* Input de cantidad ocupa todo el ancho disponible */
+  .cart-qty-input {
+    width: 100%;
+    max-width: 120px;
+  }
+
+  /* Botón eliminar centrado y ancho completo */
+  .btn-remove {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Total centrado y separado de la tabla */
+  .cart-total {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  /* Botones inferiores apilados a lo ancho */
+  .cart-buttons {
+    margin-top: 1.5rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .cart-buttons .btn-clear,
+  .cart-buttons .btn-buy {
+    width: 100%;
+    text-align: center;
+  }
 }
+
+
