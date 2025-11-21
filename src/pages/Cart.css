@@ -1,10 +1,10 @@
-/* ====== ESTILOS GENERALES CARRITO (DESKTOP) ====== */
+
 .cart-page {
   color: #ffffff;
   padding: 2rem 0;
 }
 
-/* TÍTULO */
+
 .cart-page h1 {
   font-size: 2.4rem;
   font-weight: 700;
@@ -12,7 +12,7 @@
   text-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
 }
 
-/* TABLA */
+
 .cart-table {
   width: 100%;
   border-collapse: collapse;
@@ -22,7 +22,7 @@
   overflow: hidden;
 }
 
-/* HEADER DE TABLA */
+
 .cart-table thead th {
   padding: 1rem;
   background: rgba(255, 255, 255, 0.08);
@@ -32,7 +32,7 @@
   letter-spacing: 0.5px;
 }
 
-/* FILAS */
+
 .cart-table tbody td {
   padding: 1rem;
   color: black;
@@ -40,7 +40,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* INPUT DE CANTIDAD */
+
 .cart-qty-input {
   width: 80px;
   text-align: center;
@@ -50,7 +50,7 @@
   border-radius: 6px;
 }
 
-/* BOTÓN ELIMINAR */
+
 .btn-remove {
   background: #d9534f !important;
   border: none !important;
@@ -64,7 +64,7 @@
   background: #c9302c !important;
 }
 
-/* TOTAL */
+
 .cart-total {
   margin-top: 1rem;
   font-size: 1.4rem;
@@ -72,7 +72,7 @@
   color: #fff;
 }
 
-/* BOTONES INFERIORES */
+
 .cart-buttons {
   margin-top: 1.5rem;
   display: flex;
@@ -105,18 +105,18 @@
   background: #c9302c !important;
 }
 
-/* ====== RESPONSIVE: MOBILE (≤ 480px) ====== */
+
 @media (max-width: 480px) {
   .cart-page {
     padding: 1.5rem 0;
   }
 
-  /* Ocultamos el header de la tabla */
+  
   .cart-table thead {
     display: none;
   }
 
-  /* La tabla se convierte en "cards" verticales */
+  
   .cart-table,
   .cart-table tbody,
   .cart-table tr,
@@ -173,25 +173,25 @@
     color: #bbbbbb;
   }
 
-  /* Input de cantidad ocupa todo el ancho disponible */
+ 
   .cart-qty-input {
     width: 100%;
     max-width: 120px;
   }
 
-  /* Botón eliminar centrado y ancho completo */
+ 
   .btn-remove {
     width: 100%;
     text-align: center;
   }
 
-  /* Total centrado y separado de la tabla */
+ 
   .cart-total {
     text-align: center;
     margin-top: 0.5rem;
   }
 
-  /* Botones inferiores apilados a lo ancho */
+ 
   .cart-buttons {
     margin-top: 1.5rem;
     flex-direction: column;

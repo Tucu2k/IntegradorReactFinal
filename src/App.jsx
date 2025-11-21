@@ -7,16 +7,16 @@ import About from './pages/About'
 import Products from './pages/Products'
 import Contact from './pages/Contact'
 import CartPage from './pages/CartPage'
-import StarsBackground from './components/StarsBackground'   // 🌌 Fondo animado (CSS)
-import './App.css'                                           // 🎨 estilos globales
+import StarsBackground from './components/StarsBackground'   
+import './App.css'                                           
 
 export default function App() {
   return (
     <>
-      {/* 🌠 Fondo animado de estrellas (queda detrás de todo) */}
+      {}
       <StarsBackground />
 
-      {/* Contenido principal sobre el fondo */}
+      {}
       <div className="content-wrapper">
         <Header />
         <main className="container my-4">

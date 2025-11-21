@@ -1,8 +1,8 @@
-/* === Fondo estrellado retro === */
+
 body, html {
   margin-top: 1rem;
-  padding: 0;/* color de respaldo si el canvas no carga */
-  color: white; /* texto en blanco para contraste */
+  padding: 0;
+  color: white; 
   min-height: 100vh;
   overflow-x: hidden;
   height: 100%;
@@ -19,16 +19,16 @@ main, .container {
 
 .app-container {
   position: relative;
-  z-index: 1; /* para que el contenido quede encima del fondo */
+  z-index: 1; 
 }
 
 .card {
   background: rgba(255, 255, 255, 0.08) !important;
   color: white !important;
-  border: none !important; /* 🔹 Sin bordes */
+  border: none !important; 
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05); /* sombra sutil */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05); 
   transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 .card-body,
@@ -45,9 +45,9 @@ main, .container {
 .btn {
   border-radius: 6px;
 }
-/* === Hero oscuro y transparente === */
+
 .hero-section {
-  background: transparent !important;  /* elimina fondo blanco */
+  background: transparent !important; 
   color: #fff;
 }
 
@@ -55,13 +55,13 @@ main, .container {
   font-weight: 600;
 }
 
-/* Corrige el fondo por si Bootstrap agrega un color claro */
+
 .bg-light, .bg-white {
   background-color: transparent !important;
 }
 .content-wrapper {
   position: relative;
-  z-index: 1; /* asegura que esté sobre el fondo */
+  z-index: 1; 
 }
 h1, h2, h3, h4, h5, p, label {
   color: white !important;
@@ -71,7 +71,7 @@ button, .btn {
   border-radius: 8px;
 }
 
-/* Navbar transparente para que se vean las estrellas detrás */
+
 .navbar {
   background-color: rgba(10, 10, 20, 0.8) !important;
   backdrop-filter: blur(6px);
